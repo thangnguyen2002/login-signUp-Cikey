@@ -1,0 +1,305 @@
+.auth-container {
+    font-family    : sans-serif;
+    padding        : 10px 100px;
+    display        : flex;
+    justify-content: space-around;
+
+    .content-left {
+        width : 450px;
+        height: 550px;
+
+        .img1 {
+            margin-top: 108px;
+            position  : relative;
+            max-width : 100%;
+            max-height: 100%;
+        }
+
+        .img2 {
+            position: absolute;
+            height  : 291px;
+            top     : 27%;
+            right   : 61%;
+        }
+    }
+
+    .content-right {
+        .header {
+            .title {
+                font-size  : 37.91px;
+                font-weight: 600;
+                line-height: 53.94px;
+            }
+
+            .toLogin {
+                font-size  : 19.07px;
+                font-weight: 400;
+
+                a {
+                    text-decoration: none;
+                    color          : rgba(254, 144, 75, 1);
+                }
+            }
+        }
+
+        .body {
+            .form {
+                margin: 30px 0 40px 0;
+
+                .form-item {
+                    position: relative;
+
+                    label {
+                        font-size: 14.3px;
+                    }
+
+                    input {
+                        background-color: #f8f8fc;
+                        padding         : 0 10px;
+                        width           : 559.03px;
+                        height          : 41.52px;
+                        outline         : none;
+                        border-radius   : 10px;
+                        border          : 2.38392px solid rgba(111, 207, 151, 1);
+                        margin-bottom   : 10.3px;
+                    }
+
+                    span {
+                        position: absolute;
+                        right   : 15px;
+                        cursor  : pointer;
+                        bottom  : 20px;
+                    }
+
+                    display       : flex;
+                    flex-direction: column;
+                    gap           : 5px;
+                }
+            }
+
+            .body-btn {
+                button {
+                    margin-top   : -30px;
+                    border       : none;
+                    border-radius: 10px;
+                    font-weight  : bold;
+                    font-size    : 15.22px;
+                    color        : #fff;
+                    width        : 100%;
+                    height       : 45.52px;
+                    background   : linear-gradient(271.15deg, #FE904B 7.64%, #FB724C 90.68%), #EE5757;
+                    cursor       : pointer;
+
+                    &:active {
+                        transform : scale(0.995);
+                        background: linear-gradient(271.15deg, #f48139 7.64%, #f9663e 90.68%), #e64c4c;
+                    }
+                }
+            }
+
+            .forgot-pass {
+                color     : rgba(32, 113, 152, 1);
+                display   : block;
+                margin-top: 10px;
+            }
+        }
+
+        .footer {
+            .footer-bar {
+                position: relative;
+                margin  : 20px;
+
+                .footer-text {
+                    text-align : center;
+                    font-size  : 18.61px;
+                    font-weight: 600px;
+                }
+
+                .bar-left {
+                    position: absolute;
+                    width   : 126.35px;
+                    height  : 0px;
+                    left    : 115px;
+                    top     : 12px;
+                    border  : 1.19196px solid #0E4A67;
+                }
+
+                .bar-right {
+                    position: absolute;
+                    width   : 126.35px;
+                    height  : 0px;
+                    right   : 115px;
+                    top     : 12px;
+                    border  : 1.19196px solid #0E4A67;
+                }
+            }
+
+            .footer-other {
+                button {
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    color          : rgba(32, 113, 152, 1);
+                    font-size      : 25px;
+                    width          : 100%;
+                    height         : 45.52px;
+                    border         : none;
+                    border-radius  : 10px;
+                    background     : #E3F1FE;
+                    border         : 2.38392px solid #207198;
+                    margin-bottom  : 20px;
+
+                    .google-icon {
+                        margin-left: -19px;
+                    }
+
+                    span {
+                        cursor     : pointer;
+                        margin-left: 20px;
+                        font-size  : 15px;
+
+                        &:active {
+                            color: rgb(19, 164, 237);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1125px) {
+    .auth-container {
+        .content-left {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .auth-container {
+        .content-left {
+            display: none;
+        }
+
+        .content-right {
+            width: 100%;
+
+            .header {
+                .title {
+                    font-size: 27.91px;
+                }
+            }
+
+            .body {
+                .form {
+                    .form-item {
+                        input {
+                            background-color: #f8f8fc;
+                            padding         : 0;
+                            width           : 100%;
+                        }
+                    }
+                }
+
+                .body-btn {
+                    button {
+                        margin-top   : -30px;
+                        border       : none;
+                        border-radius: 10px;
+                        font-weight  : bold;
+                        font-size    : 15.22px;
+                        color        : #fff;
+                        width        : 100%;
+                        height       : 45.52px;
+                        background   : linear-gradient(271.15deg, #FE904B 7.64%, #FB724C 90.68%), #EE5757;
+                        cursor       : pointer;
+
+                        &:active {
+                            transform : scale(0.995);
+                            background: linear-gradient(271.15deg, #f48139 7.64%, #f9663e 90.68%), #e64c4c;
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                .footer-bar {
+                    position: relative;
+                    margin  : 20px;
+
+                    .footer-text {
+                        text-align : center;
+                        font-size  : 18.61px;
+                        font-weight: 600px;
+                    }
+
+                    .bar-left {
+                        position: absolute;
+                        width   : 65px;
+                        height  : 0px;
+                        left    : -20px;
+                        top     : 12px;
+                        border  : 1.19196px solid #0E4A67;
+                    }
+
+                    .bar-right {
+                        position: absolute;
+                        width   : 65px;
+                        height  : 0px;
+                        right   : -20px;
+                        top     : 12px;
+                        border  : 1.19196px solid #0E4A67;
+                    }
+                }
+
+                .footer-other {
+                    button {
+                        display        : flex;
+                        align-items    : center;
+                        justify-content: center;
+                        color          : rgba(32, 113, 152, 1);
+                        font-size      : 25px;
+                        width          : 100%;
+                        height         : 45.52px;
+                        border         : none;
+                        border-radius  : 10px;
+                        background     : #E3F1FE;
+                        border         : 2.38392px solid #207198;
+                        margin-bottom  : 20px;
+
+                        .google-icon {
+                            margin-left: -19px;
+                        }
+
+                        span {
+                            cursor     : pointer;
+                            margin-left: 20px;
+                            font-size  : 15px;
+
+                            &:active {
+                                color: rgb(19, 164, 237);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .auth-container {
+        .content-right {
+            .footer {
+                .footer-other {
+                    button {
+                        .google-icon {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
