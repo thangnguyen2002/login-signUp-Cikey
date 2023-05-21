@@ -6,13 +6,13 @@ import { SlEye } from "react-icons/sl";
 import Footer from './Subs/Footer';
 
 const Register = (props) => {
-    const {handleToLogin, isShow, handleShow} = props
+    const { handleToLogin, isShow, handleShow } = props
 
-    return ( 
+    return (
         <div className="auth-container">
             <div className="content-left">
-                <img src={img1} alt="" className='img1'/>
-                <img src={img2} alt="" className='img2'/>
+                <img src={img1} alt="" className='img1' />
+                <img src={img2} alt="" className='img2' />
             </div>
             <div className="content-right">
                 <div className="header">
@@ -23,28 +23,28 @@ const Register = (props) => {
                     <div className="form">
                         <div className="form-item">
                             <label>First name</label>
-                            <input type="text" placeholder='Enter your first name'/>
+                            <input type="text" placeholder='Enter your first name' />
                         </div>
                         <div className="form-item">
                             <label>Last name</label>
-                            <input type="text" placeholder='Enter your last name'/>
+                            <input type="text" placeholder='Enter your last name' />
                         </div>
                         <div className="form-item">
                             <label>Email</label>
-                            <input type="email" placeholder='Enter your email'/>
+                            <input type="email" placeholder='Enter your email' />
                         </div>
                         <div className="form-item">
                             <label>Password</label>
-                            <input type={isShow ? 'text' : 'password'} placeholder='Enter your password'/>
-                            {isShow ? 
-                                <span className='eye-icon' onClick={handleShow}><SlEye/></span>
-                            :
-                                <span className='eye-icon' onClick={handleShow}><RiEyeCloseFill/></span>
+                            <input type={isShow ? 'text' : 'password'} placeholder='Enter your password' />
+                            {isShow ?
+                                <span className='eye-icon' onClick={handleShow}><SlEye /></span>
+                                :
+                                <span className='eye-icon' onClick={handleShow}><RiEyeCloseFill /></span>
                             }
                         </div>
                         <div className="form-item">
                             <label>Confirm password</label>
-                            <input type='password' placeholder='Confirm your password'/>
+                            <input type='password' placeholder='Confirm your password' />
                         </div>
                     </div>
 
@@ -53,11 +53,11 @@ const Register = (props) => {
                     </div>
                 </div>
                 <div className="footer">
-                    <Footer/>
+                    <Footer />
                 </div>
             </div>
         </div>
-     );
+    );
 }
- 
+
 export default Register;
